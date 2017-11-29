@@ -15,6 +15,16 @@
 		text-align: center;
 		box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
 		cursor: pointer;
+
+		@include respond(tablet-port) {
+			top: 4rem;
+			right: 4rem;
+		}
+
+		@include respond(phone) {
+			top: 3rem;
+			right: 3rem;
+		}
 	}
 
 	&__background {
@@ -30,6 +40,14 @@
 		);
 		z-index: 1000;
 		transition: transform 0.8s ease-out;
+		@include respond(tablet-port) {
+			top: 4.5rem;
+			right: 4.5rem;
+		}
+		@include respond(phone) {
+			top: 3rem;
+			right: 3rem;
+		}
 	}
 	&__nav {
 		height: 100vh;
